@@ -3,16 +3,16 @@
 # Program for generating prime numbers
 
 primes = []                               # Empty list created
-upto = 101
+upto = 100000
 
 numbers  = range(2,upto)                  # Numbers is in range from 2 to 100
 
 for number in numbers:
-  print(number, end= " ")
+  # print(number, end= " ")
   isPrime = True
   
   # Check to see if it is a prime
-  for divisor in range (2, number):
+  for divisor in primes:
     if number % divisor == 0:
       isPrime = False
       break
