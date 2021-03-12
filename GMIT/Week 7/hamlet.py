@@ -1,14 +1,13 @@
 
 filename = "hamlet_text.txt"
-path = ''
 
 outputFile = "Lines.txt"
 
 player = "BERNARDO"
 
 isPlayerLine = False
-with open (path+filename, 'rt') as file:
-  with open (path + outputFile, "wt") as out:
+with open (filename, 'rt') as file:
+  with open (outputFile, "wt") as out:
     for line in file.readlines():
       if line.startswith(player):
         isPlayerLine = True
